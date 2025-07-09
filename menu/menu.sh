@@ -261,7 +261,7 @@ clear
 clear && clear && clear
 clear;clear;clear
 echo -e "$COLOR1╭═══════════════════════════════════════════════════╮${NC}"
-echo -e "$COLOR1│${NC} ${COLBG1}         ${WH}• SCRIPT VPS PREMIUM •            ${NC} $COLOR1│ $NC"
+echo -e "$COLOR1│${NC} ${COLBG1}              ${WH}• SCRIPT VPS PREMIUM •             ${NC} $COLOR1│ $NC"
 echo -e "$COLOR1╰═══════════════════════════════════════════════════╯${NC}"
 echo -e "$COLOR1╭═══════════════════════════════════════════════════╮${NC}"
 echo -e "$COLOR1│ $NC${WH}❈ System OS          ${COLOR1}: ${WH}$MODEL2"
@@ -300,7 +300,7 @@ echo -e "$COLOR1╰════════════════════�
 
 echo -e "$COLOR1╭═══════════════════════════════════════════════════╮${NC}"
 echo -e "$COLOR1│ $NC ${WH}Versi Script  ${COLOR1}: ${WH}$(cat /opt/.ver) Latest Version${NC}$COLOR1"
-echo -e "$COLOR1│ $NC ${WH}Expire Date   ${COLOR1}: ${WH} Versi Life-Time${NC}"
+echo -e "$COLOR1│ $NC ${WH}Expire Date   ${COLOR1}: ${WH}Versi Life-Time${NC}"
 echo -e "$COLOR1╰═══════════════════════════════════════════════════╯${NC}"
 echo -e ""
 echo -ne " ${WH}Select menu ${COLOR1}: ${WH}"; read opt

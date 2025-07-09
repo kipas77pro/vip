@@ -12,7 +12,6 @@ export BLUE='\033[0;34m'
 export CYAN='\033[0;36m'
 export NC='\033[0m'
 
-
 ###########- COLOR CODE -##############
 export RED='\033[0;31m'
 export GREEN='\033[0;32m'
@@ -326,7 +325,7 @@ echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}
 echo -e "$COLOR1 ${NC}  ${WH}Save Link Acount    : " | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 ${NC}  ${WH}http://$domen:89/ssh-$Login.txt${NC}$COLOR1 $NC" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 ${NC}    ${WH}• HOKAGE LEGEND STORE •${NC}                 $COLOR1 $NC" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1 ${NC}    ${WH}• JEMBOT STORE •${NC}                 $COLOR1 $NC" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo "" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 read -n 1 -s -r -p "Press any key to back on menu"
@@ -557,7 +556,7 @@ echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}
 echo -e "$COLOR1 ${NC}  ${WH}Save Link Acount    : " | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 ${NC}  ${WH}http://$domen:89/ssh-$Login.txt${NC}$COLOR1 $NC" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
-echo -e "$COLOR1 ${NC}    ${WH}• HOKAGE LEGEND STORE •${NC}                 $COLOR1 $NC" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
+echo -e "$COLOR1 ${NC}    ${WH}• JEMBOT STORE •${NC}                 $COLOR1 $NC" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 echo "" | tee -a /etc/xray/sshx/akun/log-create-${Login}.log
 read -n 1 -s -r -p "Press any key to back on menu"
@@ -1189,7 +1188,7 @@ echo -e " $COLOR1║ $NC                                                  ${NC} 
 echo -e " $COLOR1║ $NC  ${WH}[${COLOR1}00${WH}]${NC} ${COLOR1}• ${WH}GO BACK${NC}         ${WH}[${COLOR1}09${WH}]${NC} ${COLOR1}• ${WH}UNLOCK LOGIN${NC}      $COLOR1 ║$NC"
 echo -e " $COLOR1╚════════════════════════════════════════════════════╝${NC}"
 echo -e " $COLOR1╔═════════════════════════ ${WH}BY${NC} ${COLOR1}═══════════════════════╗ ${NC}"
-echo -e "  $COLOR1${NC}              ${WH}   • HOKAGE LEGEND STORE •                 $COLOR1 $NC"
+echo -e "  $COLOR1${NC}              ${WH}   • JEMBOT STORE •                 $COLOR1 $NC"
 echo -e " $COLOR1╚════════════════════════════════════════════════════╝${NC}"
 echo -e ""
 echo -ne " ${WH}Select menu ${COLOR1}: ${WH}"; read opt
