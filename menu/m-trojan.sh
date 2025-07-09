@@ -256,7 +256,7 @@ echo -e "$COLOR1 ${NC} ${WH}http://$domain:89/trojan-$user.txt${NC}" | tee -a /e
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/trojan/akun/log-create-${user}.log
 echo -e "$COLOR1 ${NC} ${WH}Expired Until   ${COLOR1}: ${WH}$exp" | tee -a /etc/trojan/akun/log-create-${user}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/trojan/akun/log-create-${user}.log
-echo -e "$COLOR1 ${NC} ${WH}    • ROSI VPN STORE •     " | tee -a /etc/trojan/akun/log-create-${user}.log
+echo -e "$COLOR1 ${NC} ${WH}    • JEMBOT VPN STORE •     " | tee -a /etc/trojan/akun/log-create-${user}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/trojan/akun/log-create-${user}.log
 echo "" | tee -a /etc/trojan/akun/log-create-${user}.log
 systemctl restart xray > /dev/null 2>&1
@@ -405,7 +405,7 @@ echo -e "$COLOR1 ${NC} ${WH}http://$domain:89/trojan-$user.txt${NC}" | tee -a /e
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/trojan/akun/log-create-${user}.log
 echo -e "$COLOR1 ${NC} ${WH}Expired Until   ${COLOR1}: ${WH}$timer Minutes" | tee -a /etc/trojan/akun/log-create-${user}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/trojan/akun/log-create-${user}.log
-echo -e "$COLOR1 ${NC} ${WH}    • ARYA VPN STORE •     " | tee -a /etc/trojan/akun/log-create-${user}.log
+echo -e "$COLOR1 ${NC} ${WH}    • JEMBOT VPN STORE •     " | tee -a /etc/trojan/akun/log-create-${user}.log
 echo -e "$COLOR1 ◇━━━━━━━━━━━━━━━━━◇ ${NC}" | tee -a /etc/trojan/akun/log-create-${user}.log
 echo "" | tee -a /etc/trojan/akun/log-create-${user}.log
 systemctl restart xray > /dev/null 2>&1
@@ -1114,7 +1114,7 @@ echo -e " $COLOR1║ $NC                                                  ${NC} 
 echo -e " $COLOR1║ $NC ${WH}[${COLOR1}00${WH}]${NC} ${COLOR1}• ${WH}GO BACK${NC}          ${WH}[${COLOR1}11${WH}]${NC} ${COLOR1}• ${WH}RESTORE AKUN   ${NC}    $COLOR1║ $NC"
 echo -e " $COLOR1╚════════════════════════════════════════════════════╝${NC}"
 echo -e " $COLOR1╔═════════════════════════ ${WH}BY${NC} ${COLOR1}═══════════════════════╗ ${NC}"
-echo -e "  $COLOR1${NC}              ${WH}   • JEMBOT LEGEND STORE •                  $COLOR1 $NC"
+echo -e "  $COLOR1${NC}              ${WH}   • JEMBOT STORE •                  $COLOR1 $NC"
 echo -e " $COLOR1╚════════════════════════════════════════════════════╝${NC}"
 echo -e ""
 echo -ne " ${WH}Select menu ${COLOR1}: ${WH}"; read opt
