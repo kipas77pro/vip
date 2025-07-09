@@ -90,80 +90,35 @@ fun_bar() {
 
 wow() {
 
-wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/Ilham24022001/Gantengz/refs/heads/main/menu/menu.sh" && chmod +x /usr/bin/menu
-wget -q -O /usr/bin/update "https://raw.githubusercontent.com/Ilham24022001/Gantengz/refs/heads/main/menu/update.sh" && chmod +x /usr/bin/update
-wget -q -O /usr/bin/m-tcp "https://raw.githubusercontent.com/Ilham24022001/Gantengz/refs/heads/main/menu/m-tcp.sh" && chmod +x /usr/bin/m-tcp
+wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/menu/menu.sh" && chmod +x /usr/bin/menu
+wget -q -O /usr/bin/update "https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/menu/update.sh" && chmod +x /usr/bin/update
+wget -q -O /usr/bin/m-tcp "https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/menu/m-tcp.sh" && chmod +x /usr/bin/m-tcp
 
-wget -q -O /usr/bin/m-theme "https://raw.githubusercontent.com/Ilham24022001/Gantengz/refs/heads/main/menu/m-theme.sh" && chmod +x /usr/bin/m-theme
-wget -q -O /usr/bin/m-vmess "https://raw.githubusercontent.com/Ilham24022001/Gantengz/refs/heads/main/menu/m-vmess.sh" && chmod +x /usr/bin/m-vmess
-wget -q -O /usr/bin/m-vless "https://raw.githubusercontent.com/Ilham24022001/Gantengz/refs/heads/main/menu/m-vless.sh" && chmod +x /usr/bin/m-vless
-wget -q -O /usr/bin/m-trojan "https://raw.githubusercontent.com/Ilham24022001/Gantengz/refs/heads/main/menu/m-trojan.sh" && chmod +x /usr/bin/m-trojan
+wget -q -O /usr/bin/m-theme "https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/menu/m-theme.sh" && chmod +x /usr/bin/m-theme
+wget -q -O /usr/bin/m-vmess "https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/menu/m-vmess.sh" && chmod +x /usr/bin/m-vmess
+wget -q -O /usr/bin/m-vless "https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/menu/m-vless.sh" && chmod +x /usr/bin/m-vless
+wget -q -O /usr/bin/m-trojan "https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/menu/m-trojan.sh" && chmod +x /usr/bin/m-trojan
 
-wget -q -O /usr/bin/system "https://raw.githubusercontent.com/Ilham24022001/Gantengz/refs/heads/main/menu/system.sh" && chmod +x /usr/bin/system
-wget -q -O /usr/bin/sshws "https://raw.githubusercontent.com/Ilham24022001/Gantengz/refs/heads/main/menu/sshws.sh" && chmod +x /usr/bin/sshws
-wget -q -O /usr/bin/running "https://raw.githubusercontent.com/Ilham24022001/Gantengz/refs/heads/main/menu/running.sh" && chmod +x /usr/bin/running
-wget -q -O /usr/bin/cekservice "https://raw.githubusercontent.com/Ilham24022001/Gantengz/refs/heads/main/menu/cekservice.sh" && chmod +x /usr/bin/cekservice
-wget -q -O /usr/bin/m-update "https://raw.githubusercontent.com/Ilham24022001/Gantengz/refs/heads/main/menu/m-update.sh" && chmod +x /usr/bin/m-update
-wget -q -O /usr/bin/tendang "https://raw.githubusercontent.com/Ilham24022001/Gantengz/refs/heads/main/menu/tendang.sh" && chmod +x /usr/bin/tendang
-wget -q -O /usr/bin/check-port "https://raw.githubusercontent.com/Ilham24022001/Gantengz/refs/heads/main/menu/check-port.sh" && chmod +x /usr/bin/check-port
+wget -q -O /usr/bin/system "https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/menu/system.sh" && chmod +x /usr/bin/system
+wget -q -O /usr/bin/sshws "https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/menu/sshws.sh" && chmod +x /usr/bin/sshws
+wget -q -O /usr/bin/running "https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/menu/running.sh" && chmod +x /usr/bin/running
+wget -q -O /usr/bin/cekservice "https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/menu/cekservice.sh" && chmod +x /usr/bin/cekservice
+wget -q -O /usr/bin/m-update "https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/menu/m-update.sh" && chmod +x /usr/bin/m-update
+wget -q -O /usr/bin/tendang "https://raw.githubusercontent.com/Ikipas77pro/vip/refs/heads/main/menu/tendang.sh" && chmod +x /usr/bin/tendang
+wget -q -O /usr/bin/check-port "https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/menu/check-port.sh" && chmod +x /usr/bin/check-port
 
-wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/Ilham24022001/Gantengz/refs/heads/main/menu/menu-backup.sh" && chmod +x /usr/bin/menu-backup
-wget -q -O /usr/bin/auto-backup "https://raw.githubusercontent.com/Ilham24022001/Gantengz/refs/heads/main/menu/auto-backup.sh" && chmod +x /usr/bin/auto-backup
-wget -q -O /usr/bin/auto-restore "https://raw.githubusercontent.com/Ilham24022001/Gantengz/refs/heads/main/menu/auto-restore.sh" && chmod +x /usr/bin/auto-restore
-wget -q -O /usr/bin/manual-backup "https://raw.githubusercontent.com/Ilham24022001/Gantengz/refs/heads/main/menu/manual-backup.sh" && chmod +x /usr/bin/manual-backup
-wget -q -O /usr/bin/manual-restore "https://raw.githubusercontent.com/Ilham24022001/Gantengz/refs/heads/main/menu/manual-restore.sh" && chmod +x /usr/bin/manual-restore
+wget -q -O /usr/bin/menu-backup "https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/menu/menu-backup.sh" && chmod +x /usr/bin/menu-backup
+wget -q -O /usr/bin/auto-backup "https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/menu/auto-backup.sh" && chmod +x /usr/bin/auto-backup
+wget -q -O /usr/bin/auto-restore "https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/menu/auto-restore.sh" && chmod +x /usr/bin/auto-restore
+wget -q -O /usr/bin/manual-backup "https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/menu/manual-backup.sh" && chmod +x /usr/bin/manual-backup
+wget -q -O /usr/bin/manual-restore "https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/menu/manual-restore.sh" && chmod +x /usr/bin/manual-restore
 
-wget -q -O /usr/bin/xraylimit "https://raw.githubusercontent.com/Ilham24022001/Gantengz/refs/heads/main/menu/xraylimit.sh" && chmod +x /usr/bin/xraylimit
-wget -q -O /usr/bin/trialvmess "https://raw.githubusercontent.com/Ilham24022001/Gantengz/refs/heads/main/menu/trialvmess.sh" && chmod +x /usr/bin/trialvmess
-wget -q -O /usr/bin/trialvless "https://raw.githubusercontent.com/Ilham24022001/Gantengz/refs/heads/main/menu/trialtrojan.sh" && chmod +x /usr/bin/trialtrojan
-wget -q -O /usr/bin/trialtrojan "https://raw.githubusercontent.com/Ilham24022001/Gantengz/refs/heads/main/menu/trialvless.sh" && chmod +x /usr/bin/trialvless
-wget -q -O /usr/bin/trialssh "https://raw.githubusercontent.com/Ilham24022001/Gantengz/refs/heads/main/menu/trialssh.sh" && chmod +x /usr/bin/trialssh
-wget -q -O /usr/bin/trial "https://raw.githubusercontent.com/Ilham24022001/Gantengz/refs/heads/main/menu/trial.sh" && chmod +x /usr/bin/trial
-
-chmod +x m-tcp
-chmod +x m-theme
-chmod +x m-trojan
-chmod +x m-update
-chmod +x m-vless
-chmod +x m-vmess
-chmod +x menu
-chmod +x auto-backup
-chmod +x auto-restore
-chmod +x manual-backup
-chmod +x manual-restore
-chmod +x menu-backup
-chmod +x running
-chmod +x sshws
-chmod +x system
-chmod +x tendang
-chmod +x trial
-chmod +x trialssh
-chmod +x trialtrojan
-chmod +x trialvless
-chmod +x trialvmess
-chmod +x update
-
-chmod +x cleaner
-chmod +x m-allxray
-chmod +x xraylimit
-chmod +x xp
-chmod +x autocpu
-chmod +x bantwidth
-chmod +x bbr
-chmod +x ins-xray
-chmod +x lolcat
-chmod +x set-br
-chmod +x slowdns
-chmod +x ssh-vpn
-chmod +x strt
-chmod +x udp-custom
-chmod +x vpn
-chmod +x limit
-chmod +x quota
-chmod +x trojan
-chmod +x vless
-chmod +x vmess
-chmod +x insshws
+wget -q -O /usr/bin/xraylimit "https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/menu/xraylimit.sh" && chmod +x /usr/bin/xraylimit
+wget -q -O /usr/bin/trialvmess "https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/menu/trialvmess.sh" && chmod +x /usr/bin/trialvmess
+wget -q -O /usr/bin/trialvless "https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/menu/trialtrojan.sh" && chmod +x /usr/bin/trialtrojan
+wget -q -O /usr/bin/trialtrojan "https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/menu/trialvless.sh" && chmod +x /usr/bin/trialvless
+wget -q -O /usr/bin/trialssh "https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/menu/trialssh.sh" && chmod +x /usr/bin/trialssh
+wget -q -O /usr/bin/trial "https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/menu/trial.sh" && chmod +x /usr/bin/trial
 clear
 
 }
