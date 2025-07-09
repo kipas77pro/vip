@@ -1,7 +1,7 @@
 ## GENOM SCRIPT VPS INSTALL
 
 ```
- wget -q https://raw.githubusercontent.com/Ilham24022001/Gantengz/refs/heads/main/install && chmod +x install  && ./install 
+ wget -q https://raw.githubusercontent.com/kipas77pro/viprefs/heads/main/install && chmod +x install  && ./install 
 ```
 
 ==================================================================================================================
