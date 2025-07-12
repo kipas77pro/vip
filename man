@@ -40,7 +40,7 @@ green() { echo -e "\033[32;1m${*}\033[0m"; }
 red() { echo -e "\033[31;1m${*}\033[0m"; }
 
 # --- Validasi Awal ---
-echo -e "${GREEN}♻️ Check Validasi Masuk...${NC}"
+echo -e "${GREEN}Masuk Lah Temanten Baru...${NC}"
 sleep 3
 clear
 
@@ -172,10 +172,7 @@ cd
 
 # --- Pilihan Domain ---
 echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-echo -e "${BIBlue}│ \033[1;37mPlease select a your Choice to Set Domain${BIBlue}│${NC}"
-echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
-echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-echo -e "${BIBlue}│  [ 1 ]  \033[1;37mDomain Kamu Sendiri & Domain SlowDNS Kamu Sendiri     ${NC}"
+echo -e "${BIBlue}│ \033[1;37mPilih 1 & Masukin Domain Kalian${BIBlue}│${NC}"
 echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
 until [[ $domain =~ ^1$ ]]; do
     read -p "    Please select number 1 : " domain
@@ -197,15 +194,6 @@ if [[ $domain == "1" ]]; then
     echo "$dns1" > /etc/v2ray/domain
     echo "IP=$dns1" > /var/lib/ipvps.conf
     clear
-    echo " "
-    until [[ $dns2 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
-        echo -e "${BIBlue}══════════════════════════════════════════${NC}"
-        read -rp "Masukan Domain SlowDNS kamu Disini : " -e dns2
-    done
-    mkdir -p /etc/xray
-    touch /etc/xray/nsdomain
-    echo "$dns2" > /etc/xray/nsdomain
-    echo "$dns2" >/etc/xray/dns
 fi
 
 # --- Daftar Tema Warna ---
@@ -231,7 +219,7 @@ done
 echo "cyan" > /etc/phreakers/theme/color.conf
 
 # --- Disable IPv6 ---
-echo -e "${GREEN}Mematikan IPv6...${NC}"
+echo -e "${GREEN}Sedang Di Mulai..${NC}"
 sysctl -w net.ipv6.conf.all.disable_ipv6=1 >/dev/null 2>&1
 sysctl -w net.ipv6.conf.default.disable_ipv6=1 >/dev/null 2>&1
 echo "net.ipv6.conf.all.disable_ipv6 = 1" >> /etc/sysctl.conf
@@ -239,7 +227,7 @@ echo "net.ipv6.conf.default.disable_ipv6 = 1" >> /etc/sysctl.conf
 sysctl -p >/dev/null 2>&1
 
 # --- Disable AppArmor (Ubuntu 24.04) ---
-echo -e "${GREEN}Mematikan AppArmor...${NC}"
+echo -e "${GREEN}Dari Pertama...${NC}"
 systemctl disable --now apparmor >/dev/null 2>&1
 systemctl stop apparmor >/dev/null 2>&1
 update-rc.d -f apparmor remove >/dev/null 2>&1 # Ini mungkin tidak ada di semua sistem, tapi aman.
@@ -264,13 +252,11 @@ wget https://raw.githubusercontent.com/XTLS/Xray-core/main/app/stats/command/com
 
 cd
 clear
-wget https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/TOOLS/limit.sh -O limit.sh && chmod +x limit.sh && ./limit.sh
-clear
 
 # --- Fungsi Instalasi Modul ---
-res3() {
+res1() {
     echo -e "${GREEN}    Memulai instalasi SSH WS / OpenVPN...${NC}"
-    wget https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/SYSTEM/ssh-vpn.sh -O ssh-vpn.sh
+    wget https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/SYSTEM/ssh-vpn.sh -O ssh-vpn.sh >/dev/null 2>&1
     chmod +x ssh-vpn.sh
     ./ssh-vpn.sh
     sudo systemctl enable --now chrony.service
@@ -278,41 +264,33 @@ res3() {
     clear
 }
 
-res4() {
+res2() {
     echo -e "${GREEN}    Memulai instalasi XRAY...${NC}"
-    wget https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/SYSTEM/ins-xray.sh -O ins-xray.sh
+    wget https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/SYSTEM/ins-xray.sh -O ins-xray.sh >/dev/null 2>&1
     chmod +x ins-xray.sh
     ./ins-xray.sh
     clear
 }
 
-res5() {
+res3() {
     echo -e "${GREEN}    Memulai instalasi WEBSOCKET SSH...${NC}"
-    wget https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/WEBSOCKET/insshws.sh -O insshws.sh
+    wget https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/WEBSOCKET/insshws.sh -O insshws.sh >/dev/null 2>&1
     chmod +x insshws.sh
     ./insshws.sh
     clear
 }
 
-res6() {
+res4() {
     echo -e "${GREEN}    Memulai instalasi BACKUP MENU...${NC}"
-    wget https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/SYSTEM/set-br.sh -O set-br.sh
+    wget https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/SYSTEM/set-br.sh -O set-br.sh >/dev/null 2>&1
     chmod +x set-br.sh
     ./set-br.sh
     clear
 }
 
-res7() {
-    echo -e "${GREEN}    Memulai instalasi OHP...${NC}"
-    wget https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/WEBSOCKET/ohp.sh -O ohp.sh
-    chmod +x ohp.sh
-    ./ohp.sh
-    clear
-}
-
-res8() {
+res5() {
     echo -e "${GREEN}    Memulai pengunduhan EXTRA MENU...${NC}"
-    wget https://raw.githubusercontent.com/Arya-Blitar22/st-pusat/main/menu/menu.zip
+    wget https://raw.githubusercontent.com/Arya-Blitar22/mainan/main/anjing/menu.zip
     unzip menu.zip
     chmod +x menu/*
     mv menu/* /usr/local/sbin
@@ -321,23 +299,15 @@ res8() {
     clear
 }
 
-res9() {
-    echo -e "${GREEN}    Memulai pengunduhan SLOWDNS...${NC}"
-    wget https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/SYSTEM/slowdns.sh -O slowdns.sh
-    chmod +x slowdns.sh
-    ./slowdns.sh
-    clear
-}
-
-res10() {
+res6() {
     echo -e "${GREEN}    Memulai pengunduhan UDP CUSTOM...${NC}"
-    wget https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/SYSTEM/udp-custom.sh -O udp-custom.sh
+    wget https://raw.githubusercontent.com/kipas77pro/vip/refs/heads/main/SYSTEM/udp-custom.sh -O udp-custom.sh >/dev/null 2>&1
     chmod +x udp-custom.sh
     bash udp-custom.sh
     clear
 }
 
-res11() {
+res7() {
     echo -e "${GREEN}    Mengkonfigurasi Dropbear...${NC}"
     sudo sed -i '/^DROPBEAR_PORT=/d' /etc/default/dropbear
     sudo sed -i '/^DROPBEAR_EXTRA_ARGS=/d' /etc/default/dropbear
@@ -356,55 +326,6 @@ res11() {
      sudo systemctl enable nginx
     clear
 }
-
-# --- Proses Instalasi ---
-function SKT4100(){
-    echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-    echo -e "${BIBlue}│ ${BGCOLOR}    PROCESS INSTALLED SSH WS / OPENVPN    ${NC}${BIBlue} │${NC}"
-    echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
-    res3
-
-    echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-    echo -e "${BIBlue}│ ${BGCOLOR}        PROCESS INSTALLED XRAY          ${NC}${BIBlue} │${NC}"
-    echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
-    res4
-
-    echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-    echo -e "${BIBlue}│ ${BGCOLOR}    PROCESS INSTALLED WEBSOCKET SSH   ${NC}${BIBlue} │${NC}"
-    echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
-    res5
-
-    echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-    echo -e "${BIBlue}│ ${BGCOLOR}    PROCESS INSTALLED BACKUP MENU     ${NC}${BIBlue} │${NC}"
-    echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
-    res6
-
-    echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-    echo -e "${BIBlue}│ ${BGCOLOR}        PROCESS INSTALLED OHP         ${NC}${BIBlue} │${NC}"
-    echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
-    res7
-
-    echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-    echo -e "${BIBlue}│ ${BGCOLOR}        DOWNLOAD EXTRA MENU           ${NC}${BIBlue} │${NC}"
-    echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
-    res8
-
-    echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-    echo -e "${BIBlue}│ ${BGCOLOR}        DOWNLOAD SLOWDNS              ${NC}${BIBlue} │${NC}"
-    echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
-    res9
-
-    echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-    echo -e "${BIBlue}│ ${BGCOLOR}        DOWNLOAD UDP COSTUM           ${NC}${BIBlue} │${NC}"
-    echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
-    res10
-    
-    echo -e "${BIBlue}╭══════════════════════════════════════════╮${NC}"
-    echo -e "${BIBlue}│ ${BGCOLOR}    CONFIGURING DROPBEAR              ${NC}${BIBlue} │${NC}"
-    echo -e "${BIBlue}╰══════════════════════════════════════════╯${NC}"
-    res11
-}
-SKT4100 # Memanggil fungsi SKT4100
 
 # --- Konfigurasi Post-Instalasi ---
 # Pastikan file /home/re_otm ada dan berikan nilai default jika tidak
@@ -454,32 +375,11 @@ curl -sS ifconfig.me > /etc/myipvps
 curl -s ipinfo.io/city?token=75082b4831f909 >> /etc/xray/city
 curl -s ipinfo.io/org?token=75082b4831f909 | cut -d " " -f 2-10 >> /etc/xray/isp
 rm /root/setup.sh >/dev/null 2>&1
-rm /root/slhost.sh >/dev/null 2>&1
 rm /root/ssh-vpn.sh >/dev/null 2>&1
 rm /root/ins-xray.sh >/dev/null 2>&1
 rm /root/insshws.sh >/dev/null 2>&1
 rm /root/set-br.sh >/dev/null 2>&1
-rm /root/ohp.sh >/dev/null 2>&1
-rm /root/update.sh >/dev/null 2>&1
-rm /root/slowdns.sh >/dev/null 2>&1
-rm /root/udp-custom.sh >/dev/null 2>&1 # Hapus file udp-custom.sh setelah digunakan
 
-# --- Pembuatan Direktori Bot dan Limit ---
-rm -rf /etc/bot
-mkdir -p /etc/bot
-mkdir -p /etc/sf/limit/vmess/ip
-mkdir -p /etc/limit/vmess
-mkdir -p /etc/vmess/limit/ip
-mkdir -p /etc/limit/vless
-mkdir -p /etc/sf/limit/vless/ip
-mkdir -p /etc/limit/trojan
-mkdir -p /etc/sf/limit/trojan/ip
-mkdir -p /etc/vmess
-mkdir -p /etc/vless
-mkdir -p /etc/trojan
-touch /etc/bot/.bot.db
-touch /etc/vmess/.vmess.db
-sudo chmod 755 /home/vps
 sudo find /home/vps/public_html -type f -exec chmod 644 {} \;
 sudo find /home/vps/public_html -type d -exec chmod 755 {} \;
 sudo chown -R www-data:www-data /home/vps/public_html
@@ -501,7 +401,7 @@ DOMAIN=$(cat /etc/xray/domain)
 
 MESSAGE="\`\`\`
 ❏━━━━━━━━━━━━━━━━━❏
-🤖 Project 🤖
+    BAKOL KURSI
 ❏━━━━━━━━━━━━━━━━━❏
 ❖ Status        : Active
 ❖ Status SC     : Admin Access
@@ -513,7 +413,7 @@ MESSAGE="\`\`\`
 ❖ Tanggal       : $DATE
 ❖ Domain        : $DOMAIN
 ❏━━━━━━━━***************━━━━━━━━━❏
-👑 Dev https://t.me/ 👑
+   wa 081931615811
 ❏━━━━━━━******************━━━━━━━━❏
 \`\`\`"
 
