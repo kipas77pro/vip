@@ -225,21 +225,17 @@ socket = l:TCP_NODELAY=1
 socket = r:TCP_NODELAY=1
 
 [dropbear]
-accept = 8880
-connect = 127.0.0.1:22
-
-[dropbear]
-accept = 8443
+accept = 447
 connect = 127.0.0.1:109
-
-[ws-stunnel]
+[openssh]
 accept = 444
-connect = 700
-
-[openvpn]
-accept = 990
-connect = 127.0.0.1:1194
-
+connect = 127.0.0.1:22
+[openssh]
+accept = 777
+connect = 127.0.0.1:200
+[openssh]
+accept = 445
+connect = 127.0.0.1:500
 END
 
 # make a certificate
